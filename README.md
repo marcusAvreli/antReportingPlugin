@@ -9,3 +9,6 @@ url to access plugin: http://<base_url>/iiq/plugins/pluginPage.jsf?pn=antReporti
 git add without unnecessary files:
 
 git add -- . :!"output" :!"WebContent/macForm/dist" :!"WebContent/macForm/node_modules":!"WebContent/macForm/.angular" :!"bin" :!"classes" :!"output"
+
+
+curl http://spadmin:admin@<base_url>/iiq/rest/plugins   --form file=@local_zipped_archive.zip;fileName=zip_name_on_server.zip

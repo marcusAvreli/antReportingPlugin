@@ -30,6 +30,28 @@ lib
 resources
 	appllication.properties
 	logging.properties
+	
+<target name="tom-start" description="start tomcat server">
+    <echo message="starting ${tomcat.catalina_base}" />
+    <exec executable="${os.command_interpreter}">
+        <arg line="${os.command_interpreter.mandatory_argument}" />
+        <arg line="${tomcat.startup.file}" />
+        <env key="CATALINA_BASE" value="${tomcat.catalina_base}" />
+        <env key="JAVA_HOME" value="${javac.jdk.dir}" />
+        <env key="JRE_HOME"  value="${javac.jdk.dir}" />
+        <env key="JAVA_OPTS" value="${JAVA_OPTS}" />
+    </exec>
+</target>
+<target name="tom-shut" description="stop tomcat server (remember that it might not shut down immediately)">
+    <echo message="shutting down ${tomcat.catalina_base}" />
+    <exec executable="${os.command_interpreter}">
+        <arg line="${os.command_interpreter.mandatory_argument}" />
+        <arg line="${tomcat.shutdown.file}" />
+        <env key="CATALINA_BASE" value="${tomcat.catalina_base}" />
+        <env key="JAVA_HOME" value="${javac.jdk.dir}" />
+        <env key="JRE_HOME"  value="${javac.jdk.dir}" />
+    </exec>
+</target>
 -->
 
 

@@ -13,7 +13,7 @@
 	  
         <value>  
           <List>  
-            <String>sailpoint.plugin.rest.ScaffoldingPluginResource</String>  
+            <String>antReportingPlugin.ScaffoldingPluginResource</String>  
           </List>  
         </value>
 	

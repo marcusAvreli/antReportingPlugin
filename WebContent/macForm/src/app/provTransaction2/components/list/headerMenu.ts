@@ -10,7 +10,7 @@ export default function headerMenu (this: TabulatorFull) {
 
         //create checkbox element using  icons
         let icon = document.createElement("i");
-        icon.classList.add("fas");
+        icon.classList.add("fa");
         icon.classList.add(column.isVisible() ? "fa-check-square" : "fa-square");
 
         //build label

@@ -30,7 +30,7 @@ lib
 resources
 	appllication.properties
 	logging.properties
-	
+	https://stackoverflow.com/questions/38651771/how-to-use-an-ant-script-to-start-and-stop-tomcat-server
 <target name="tom-start" description="start tomcat server">
     <echo message="starting ${tomcat.catalina_base}" />
     <exec executable="${os.command_interpreter}">
